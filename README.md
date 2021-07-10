@@ -43,10 +43,10 @@ DEVICE="/dev/lirc0"
 MODULES="lirc_rpi"
 ```
 
-Link the remote configuration file to the LIRC directory:
+Copy the remote configuration file to the LIRC directory:
 
 ```bash
-sudo ln -s ac.conf /etc/lirc/lircd.conf.d/ac.conf
+sudo cp ac.conf /etc/lirc/lircd.conf.d/ac.conf
 ```
 
 Finally, reload the `lircd` service:
