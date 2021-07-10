@@ -58,5 +58,27 @@ sudo systemctl start lircd
 
 ## Setup
 
-TODO
+Install `pm2` process manager globally:
 
+```bash
+sudo npm i -g pm2
+pm2 startup
+```
+
+Install dependencies:
+
+```bash
+npm i
+```
+
+Specify the port on which the server should start listening in a `.env` file:
+
+```
+PORT=8080
+```
+
+Start application with `pm2`:
+
+```bash
+pm2 start ecosystem.config.js
+```
