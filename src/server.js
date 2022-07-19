@@ -1,8 +1,7 @@
-require('dotenv').config()
-
-const express = require('express')
-const util = require('util')
-const childProcess = require('child_process')
+import 'dotenv/config'
+import express from 'express'
+import util from 'util'
+import childProcess from 'child_process'
 
 const exec = util.promisify(childProcess.exec)
 const app = express()
